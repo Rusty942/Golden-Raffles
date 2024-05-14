@@ -1,0 +1,231 @@
+/* Body styles */
+body {
+    background-color: #333;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+/* Navigation bar styles */
+.navbar {
+    background-color: #000;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.navbar h1 {
+    margin: 0;
+    padding: 8px;
+    font-weight: bold;
+    color: #f7d259; /* Adjusted color */
+}
+
+.navbar nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar nav ul li {
+    margin-right: 20px;
+}
+
+.navbar nav ul li.login {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.navbar nav ul li.login a {
+    font-size: 20px;
+}
+
+.navbar nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #000;
+}
+
+.navbar nav ul li a:hover {
+    color: #f7d259;
+    background-color: #333;
+}
+
+/* Form container styles */
+.form-container, .login-container, .signup-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #444;
+    border-radius: 5px;
+}
+
+.form-container h2, .login-container h2, .signup-container h2 {
+    color: #f7d259;
+    text-align: center;
+}
+
+.form-container form, .login-container form, .signup-container form {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.form-container label, .login-container label, .signup-container label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.form-container input[type="text"],
+.form-container input[type="number"],
+.form-container textarea,
+.form-container input[type="datetime-local"],
+.login-container input[type="text"],
+.login-container input[type="password"],
+.signup-container input[type="text"],
+.signup-container input[type="password"],
+.signup-container input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.form-container input[type="submit"],
+.login-container input[type="submit"],
+.signup-container input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #f7d259;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px; /* Added top margin */
+}
+
+.form-container input[type="submit"]:hover,
+.login-container input[type="submit"]:hover,
+.signup-container input[type="submit"]:hover {
+    background-color: #ffd580; /* Adjusted hover color */
+}
+
+.form-container #error-message,
+.login-container #error-message,
+.signup-container #error-message {
+    text-align: center;
+}
+
+/* Login styles */
+.login-signup-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.login-container,
+.signup-container {
+    flex: 1;
+    padding: 20px;
+    background-color: #444;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.login-container {
+    margin-right: 20px;
+}
+
+.signup-container {
+    margin-left: 20px;
+}
+
+/* Vertical line */
+.vertical-line {
+    border-left: 1px solid #000;
+    height: 100%;
+}
+
+/* Sign-up link styles */
+.signup-container {
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.signup-container a {
+    text-decoration: none;
+    color: #f7d259;
+}
+
+.signup-container a:hover {
+    color: #ffd580; /* Adjusted hover color */
+}
+
+/* Footer styles */
+.footer {
+    background-color: #555;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+/*Sign up and log in validation styles*/
+.validation-messages {
+    text-align: center;
+    margin-top: 20px; /* Adjust as needed */
+}
+
+/* Competition box styles */
+.competition-box {
+    width: 45%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    margin: 0 auto; /* Center the competition boxes horizontally */
+}
+
+.competition-box h2 {
+    margin-top: 0;
+    color: #f7d259;
+}
+
+.competition-box form {
+    margin-top: 10px;
+}
+
+.competition-box input[type="email"],
+.competition-box input[type="text"] { /* Adjusted selector for name input */
+    width: calc(100% - 70px); /* Adjust width to fit within competition box */
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.competition-box button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px; /* Add margin to the top */
+}
+
+.competition-box button:hover {
+    background-color: #0056b3;
+}
